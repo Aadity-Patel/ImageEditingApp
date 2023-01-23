@@ -1,19 +1,26 @@
-import { Button } from "@mui/material";
 import React from "react";
 import EditButton from "../components/EditButton";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const navigateToImages = () => {
+    // 👇️ navigate to /images
+    navigate("/images");
+  };
+
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate("/");
+  };
   return (
     <div>
       <EditButton
         buttonText="Click here to download random image and start editing"
-        onClick={() => console.log("Hello")}
+        onClick={navigateHome}
       />
-      <EditButton
-        buttonText="See all my images"
-        onClick={() => console.log("Hello")}
-      />
-      
+      <EditButton buttonText="See all my images" onClick={navigateToImages} />
     </div>
   );
 };
