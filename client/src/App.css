@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+.random-image .contrast{
+  height: 50vh;
+  width: 50vh;
+  cursor: pointer;
+  margin-top: 10px;
+  /* background: url(https://source.unsplash.com/random) no-repeat; */
+  background-size: cover;
+  background-position: center;
+  filter: contrast(200%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.random-image .rotate{
+  height: 50vh;
+  width: 50vh;
+  cursor: pointer;
+  margin-top: 10px;
+  /* background: url(https://source.unsplash.com/random) no-repeat; */
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(90deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icons{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-around;
 }

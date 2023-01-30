@@ -10,15 +10,16 @@ const HomePage = () => {
     navigate("/images");
   };
 
-  const navigateHome = () => {
+  const navigateToDownloadPage = () => {
     // 👇️ navigate to /
-    navigate("/");
+    navigate("/random-image");
+    window.open("/random-image", "_parent").location.reload();
   };
   return (
-    <div>
+    <div className="buttons">
       <EditButton
         buttonText="Click here to download random image and start editing"
-        onClick={navigateHome}
+        onClick={navigateToDownloadPage}
       />
       <EditButton buttonText="See all my images" onClick={navigateToImages} />
     </div>
